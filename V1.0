@@ -1,0 +1,93 @@
+import datetime
+datetime.datetime.now()
+
+print "Hi! I'm Ziri, your virtual assistant. Type what you want me to do. To see the list of skills, type help."
+
+x = raw_input("Type what you want me to do here. ")
+
+if str(x) == "time":
+    print datetime.datetime.now().time()
+
+if str(x) == "date":
+    print datetime.datetime.now().date()
+
+elif str(x) == "fortune":
+    from random import *
+    f = randint(1, 20)
+    y = raw_input("Ask a question and I will try to answer it. ")
+    
+    if f == 1:
+        print "It is certain."
+        
+    if f == 2:
+        print "It is decidedly so."
+    
+    if f == 3:
+        print "Without a doubt."
+    
+    if f == 4:
+        print "Yes - definitely."
+    
+    if f == 5:
+        print "You may rely on it."
+    
+    if f == 6:
+        print "As I see it, yes."
+    
+    if f == 7:
+        print "Most likely."
+    
+    if f == 8:
+        print "Outlook good."
+    
+    if f == 9:
+        print "Yes."
+    
+    if f == 10:
+        print "Signs point to yes."
+    
+    if f == 11:
+        print "Reply hazy, try again."
+    
+    if f == 12:
+        print "Ask again later."
+    
+    if f == 13:
+        print "Better not tell you now."
+    
+    if f == 14:
+        print "Cannot predict now."
+    
+    if f == 15:
+        print "Concentrate and ask again."
+    
+    if f == 16:
+        print "Don't count on it."
+    
+    if f == 17:
+        print  "My reply is no."
+    
+    if f == 18:
+        print "My sources say no."
+    
+    if f == 19:
+        print "Outlook not so good."
+    
+    if f == 20:
+        print "Very doubtful."
+
+elif str(x) == "repeater":
+    print "Hello!"
+    n = 100
+    r = raw_input("What do you want me to repeat 100 times? ")
+    
+    print "Here you go:"
+    
+    while n != 0:
+        print str(r)
+        n = n - 1
+
+elif str(x) == "help":
+    print 'If you want me to give you the time, type "time". If you want me to give you the date, type "date". If you want me to give you your fortune, type "fortune". If you want me to repeat something 100 times, type "repeater".'
+
+
