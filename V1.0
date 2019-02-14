@@ -1,7 +1,7 @@
 import datetime
 datetime.datetime.now()
 
-print "Hi! I'm Ziri, your virtual assistant. Type what you want me to do. To see the list of skills, type help."
+print "Hi! I'm Ziri, your virtual assistant. Type what you want me to do. To see the list of skillz, type help."
 
 x = raw_input("Type what you want me to do here. ")
 
