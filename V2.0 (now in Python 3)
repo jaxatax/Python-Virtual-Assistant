@@ -1,0 +1,636 @@
+import random
+from random import *
+import turtle
+import datetime
+from datetime import datetime
+import time
+
+print("Yo yo yo, what's up home slice! I'm Ziri, your virtual assistant. Type what you want me to do. To see the list of skillz I can has, type help.")
+import pyttsx3
+engine = pyttsx3.init()
+engine.setProperty("rate",200)
+engine.say("Yo yo yo, what's up home slice! I'm Ziri, your virtual assistant. Type what you want me to do. To see the list of skillz I can has, type help.")
+engine.runAndWait() 
+
+while True:
+    x = input("Type what you want me to do here. ")
+
+
+    if str(x) == "time":
+        import time
+        now = datetime.now()
+        print ("%s/%s/%s %s:%s:%s" % (now.month,now.day,now.year,now.hour,now.minute,now.second))
+        c = now.hour
+        engine.say("It is")
+        engine.runAndWait()
+        c = str(c)
+        engine.say(c)
+        engine.runAndWait()
+        c = str(now.minute)
+        engine.say(c)
+        engine.runAndWait()
+        
+        if now.month == 1:
+            engine.say("on January")
+            engine.runAndWait()
+        
+        elif now.month == 2:
+            engine.say("on February")
+            engine.runAndWait()
+        
+        elif now.month == 3:
+            engine.say("on March")
+            engine.runAndWait()
+        
+        elif now.month == 4:
+            engine.say("on April")
+            engine.runAndWait()
+        
+        elif now.month == 5:
+            engine.say("on May")
+            engine.runAndWait()
+        
+        elif now.month == 6:
+            engine.say("on June")
+            engine.runAndWait()
+        
+        elif now.month == 7:
+            engine.say("on July")
+            engine.runAndWait()
+        
+        elif now.month == 8:
+            engine.say("on August")
+            engine.runAndWait()
+        
+        elif now.month == 9:
+            engine.say("on September")
+            engine.runAndWait()
+        
+        elif now.month == 10:
+            engine.say("on October")
+            engine.runAndWait()
+        
+        elif now.month == 11:
+            engine.say("on November")
+            engine.runAndWait()
+        
+        elif now.month == 12:
+            engine.say("on December")
+            engine.runAndWait()
+
+        c = str(now.day)
+        engine.say(c)
+        engine.runAndWait()
+        c = str(now.year)
+        engine.say(c)
+        engine.runAndWait()
+
+    elif str(x) == "fortune":
+        engine.setProperty("rate",200)
+        f = randint(1, 20)
+        engine.say("Ask a question and I will try to answer it.")
+        engine.runAndWait() 
+        y = input("Ask a question and I will try to answer it. ")
+        
+        if f == 1:
+            print("It is certain.")
+            engine.say("It is certain.")
+            engine.runAndWait() 
+            
+        if f == 2:
+            print("It is decidedly so.")
+            engine.say("It is decidedly so.")
+            engine.runAndWait() 
+        
+        if f == 3:
+            print("Without a doubt.")
+            engine.say("Without a doubt.")
+            engine.runAndWait() 
+        
+        if f == 4:
+            print("Yes - definitely.")
+            engine.say("Yes - definitely.")
+            engine.runAndWait() 
+        
+        if f == 5:
+            print("You may rely on it.")
+            engine.say("You may rely on it.")
+            engine.runAndWait() 
+        
+        if f == 6:
+            print("As I see it, yes.")
+            engine.say("As I see it, yes.")
+            engine.runAndWait() 
+        
+        if f == 7:
+            print("Most likely.")
+            engine.say("Most likely.")
+            engine.runAndWait() 
+        
+        if f == 8:
+            print("Outlook good.")
+            engine.say("Outlook good.")
+            engine.runAndWait() 
+        
+        if f == 9:
+            print("Yes.")
+            engine.say("Yes.")
+            engine.runAndWait() 
+        
+        if f == 10:
+            print("Signs point to yes.")
+            engine.say("Signs point to yes.")
+            engine.runAndWait() 
+        
+        if f == 11:
+            print("Reply hazy, try again.")
+            engine.say("Reply hazy, try again.")
+            engine.runAndWait() 
+        
+        if f == 12:
+            print("Ask again later.")
+            engine.say("Ask again later.")
+            engine.runAndWait() 
+        
+        if f == 13:
+            print("Better not tell you now.")
+            engine.say("Better not tell you now.")
+            engine.runAndWait()
+        
+        if f == 14:
+            print("Cannot predict now.")
+            engine.say("Cannot predict now.")
+            engine.runAndWait()
+        
+        if f == 15:
+            print("Concentrate and ask again.")
+            engine.say("Concentrate and ask again.")
+            engine.runAndWait()
+        
+        if f == 16:
+            print("Don't count on it.")
+            engine.say("Don't count on it.")
+            engine.runAndWait()
+        
+        if f == 17:
+            print("My reply is no.")
+            engine.say("My reply is no.")
+            engine.runAndWait()
+        
+        if f == 18:
+            print("My sources say no.")
+            engine.say("My sources say no.")
+            engine.runAndWait()
+        
+        if f == 19:
+            print("Outlook not so good.")
+            engine.say("Outlook not so good.")
+            engine.runAndWait()
+        
+        if f == 20:
+            print("Very doubtful.")
+            engine.say("Very doubtful.")
+            engine.runAndWait()
+
+    elif str(x) == "timer":
+        engine.setProperty("rate",200)
+        engine.say("How many hours do you want your timer to be set for? Just a warning, you won't be able to use Ziri while the timer is running.")
+        engine.runAndWait()
+        j = input("How many hours do you want the timer to be set for? Just a warning, you won't be able to use Ziri while the timer is running. ")
+        j = float(j) * 3600
+        engine.say("How many minutes do you want your timer to be set for?")
+        engine.runAndWait()
+        k = input("How many minutes do you want your timer to be set for? ")
+        k = float(k) * 60
+        engine.say("How many seconds do you want your timer to be set for?")
+        engine.runAndWait()
+        l = input("How many seconds do you want your timer to be set for? ")
+        l = float(l)
+        time.sleep(j + k + l)
+        print("Your timer is done.")
+        engine.say("Bee bee bee boo boo. Bee bee bee boo boo. Your timer is done.")
+        engine.runAndWait()
+
+    elif str(x) == "repeater":
+        print("Hello!")
+        engine.say("Hello!")
+        engine.runAndWait()
+        engine.say("What word or phrase do you want me to repeat?")
+        engine.runAndWait()
+        r = input("What word or phrase do you want me to repeat? ")
+        engine.say("How fast do you want me to say it? 200 is the normal speed, and please don't put in something that's not a number.")
+        engine.runAndWait()
+        rate = input("How fast do you want me to say it? (200 is the normal speed, and please don't put in something that's not a number.) ")
+        engine.say("How many times do you want me to repeat it? Again, please don't put something in that's not a number.")
+        engine.runAndWait()
+        n = input("How many times do you want me to repeat it? Again, please don't put something in that's not a number. ")
+        n = int(n)
+        print("Here you go:")
+        engine.say("Here you go:")
+        engine.runAndWait()
+        engine.setProperty("rate",int(rate))
+        while n != 0:
+            print(r)
+            n = n - 1
+            engine.say(r)
+            engine.runAndWait()
+        time.sleep(1)
+        engine.setProperty("rate",200)
+        print("Whew!")
+        engine.say("Whew!")
+        engine.runAndWait()
+
+    elif str(x) == "snake":
+        #source: https://stackoverflow.com/questions/30050194/snake-game-in-python-using-turtle-graphics
+        score = 0 #not an original part of the code, I added this so Ziri could tell you what score you got but it doesn't work because the original writer didn't add collision detection
+        class Square:
+            def __init__(self, x, y):
+                self.x = x
+                self.y = y
+
+            def drawself(self, turtle):
+                # draw a black box at its coordinates, leaving a small gap between cubes
+                turtle.goto(self.x - 9, self.y - 9)
+                turtle.begin_fill()
+                for i in range(4):
+                    turtle.forward(18)
+                    turtle.left(90)
+                turtle.end_fill()
+
+
+        class Food:
+            def __init__(self, x, y):
+                self.x = x
+                self.y = y
+                self.state = "ON"
+
+            def changelocation(self):
+                # I haven't programmed it to spawn outside the snake's body yet
+                self.x = randint(0, 20)*20 - 200
+                self.y = randint(0, 20)*20 - 200
+
+            def drawself(self, turtle):
+                # similar to the Square drawself, but blinks on and off
+                if self.state == "ON":
+                    turtle.goto(self.x - 9, self.y - 9)
+                    turtle.begin_fill()
+                    for i in range(4):
+                        turtle.forward(18)
+                        turtle.left(90)
+                    turtle.end_fill()
+
+            def changestate(self):
+                # controls the blinking
+                self.state = "OFF" if self.state == "ON" else "ON"
+
+
+        class Snake:
+            def __init__(self):
+                self.headposition = [20, 0] # keeps track of where it needs to go next
+                self.body = [Square(-20, 0), Square(0, 0), Square(20, 0)] # body is a list of squares
+                self.nextX = 1 # tells the snake which way it's going next
+                self.nextY = 0
+                self.crashed = False # I'll use this when I get around to collision detection
+                self.nextposition = [self.headposition[0] + 20*self.nextX,
+                                     self.headposition[1] + 20*self.nextY]
+                # prepares the next location to add to the snake
+
+            def moveOneStep(self):
+                if Square(self.nextposition[0], self.nextposition[1]) not in self.body: 
+                    # attempt (unsuccessful) at collision detection
+                    self.body.append(Square(self.nextposition[0], self.nextposition[1])) 
+                    # moves the snake head to the next spot, deleting the tail
+                    del self.body[0]
+                    self.headposition[0], self.headposition[1] = self.body[-1].x, self.body[-1].y 
+                # resets the head and nextposition
+                    self.nextposition = [self.headposition[0] + 20*self.nextX,
+                                         self.headposition[1] + 20*self.nextY]
+                else:
+                    self.crashed = True # more unsuccessful collision detection
+
+            def moveup(self): # pretty obvious what these do
+                self.nextX = 0
+                self.nextY = 1
+
+            def moveleft(self):
+                self.nextX = -1
+                self.nextY = 0
+
+            def moveright(self):
+                self.nextX = 1
+                self.nextY = 0
+
+            def movedown(self):
+                self.nextX = 0
+                self.nextY = -1
+
+            def eatFood(self):
+                # adds the next spot without deleting the tail, extending the snake by 1
+                self.body.append(Square(self.nextposition[0], self.nextposition[1]))
+                self.headposition[0], self.headposition[1] = self.body[-1].x, self.body[-1].y
+                self.nextposition = [self.headposition[0] + 20*self.nextX,
+                                     self.headposition[1] + 20*self.nextY]
+                global score
+                score = score + 1
+
+            def drawself(self, turtle): # draws the whole snake when called
+                for segment in self.body:
+                    segment.drawself(turtle)
+
+
+        class Game:
+            def __init__(self):
+                # game object has a screen, a turtle, a basic snake and a food
+                self.screen = turtle.Screen()
+                self.artist = turtle.Turtle()
+                self.artist.up()
+                self.artist.hideturtle()
+                self.snake = Snake()
+                self.food = Food(100, 0)
+                self.counter = 0 # this will be used later
+                self.commandpending = False # as will this
+
+            def nextFrame(self):
+                while True: # now here's where it gets fiddly...
+                    game.screen.listen()
+                    game.screen.onkey(game.snakedown, "Down")
+                    game.screen.onkey(game.snakeup, "Up")
+                    game.screen.onkey(game.snakeleft, "Left")
+                    game.screen.onkey(game.snakeright, "Right")
+                    turtle.tracer(0) # follow it so far?
+                    self.artist.clear()
+                    if self.counter == 5: 
+                    # only moves to next frame every 5 loops, this was an attempt to get rid of the turning delay
+                        if (self.snake.nextposition[0], self.snake.nextposition[1]) == (self.food.x, self.food.y):
+                            self.snake.eatFood()
+                            self.food.changelocation()
+                        else:
+                            self.snake.moveOneStep()
+                        self.counter = 0
+                    else:
+                        self.counter += 1
+                    self.food.changestate() # makes the food flash
+                    self.food.drawself(self.artist) # show the food and snake
+                    self.snake.drawself(self.artist)
+                    turtle.update()
+                    self.commandpending = False
+                    time.sleep(0.05)
+
+            def snakeup(self):
+                print("going up") # put this in for debugging purposes
+                if not self.commandpending: 
+                # should allow only one turn each frame I don't think it's working
+                    self.snake.moveup()
+                    self.commandpending = True
+
+            def snakedown(self):
+                print("going down")
+                if not self.commandpending:
+                    self.snake.movedown()
+                    self.commandpending = True
+
+            def snakeleft(self):
+                print("going left")
+                if not self.commandpending:
+                    self.snake.moveleft()
+                    self.commandpending = True
+
+            def snakeright(self):
+                print("going right")
+                if not self.commandpending:
+                    self.snake.moveright()
+                    self.commandpending = True
+
+
+        game = Game()
+        game.nextFrame()
+        print("Game over!")
+        print("Your score was " + score + ". Good job!") #unfortunately this didn't work ;(
+
+        game.screen.mainloop()
+
+    elif str(x) == "joke":
+        j = randint(1,20)
+        engine.setProperty("rate",200)
+        if j == 1:
+            print("What do you call a cow with no legs? Ground beef.")
+            engine.say("What do you call a cow with no legs? Ground beef.")
+            engine.runAndWait()
+
+        elif j == 2:
+            print("Yo mama so old, she knew Mr. Clean when he had an afro!")
+            engine.say("Yo mama so old, she knew Mr. Clean when he had an afro!")
+            engine.runAndWait()
+
+        elif j == 3:
+            print("Yo mama so old, she walked out of a museum and the alarm went off!")
+            engine.say("Yo mama so old, she walked out of a museum and the alarm went off!")
+            engine.runAndWait()
+
+        elif j == 4:
+            print("What do you call a short fortune teller that's hiding from the police? A small medium at large.")
+            engine.say("What do you call a short fortune teller that's hiding from the police? A small medium at large.")
+            engine.runAndWait()
+
+        elif j == 5:
+            print("What happened when Chicago and Boston shared a washing machine? They became the Pink Sox.")
+            engine.say("What happened when Chicago and Boston shared a washing machine? They became the Pink Sox.")
+            engine.runAndWait()
+
+        elif j == 6:
+            print("Why is Carmen San Diego so bad at basketball? She's always traveling.")
+            engine.say("Why is Carmen San Diego so bad at basketball? She's always traveling.")
+            engine.runAndWait()
+
+        elif j == 7:
+            print("Yo mama so hairy, shih tzus make fun of her!")
+            engine.say("Yo mama so hairy, shih tzus make fun of her!")
+            engine.runAndWait()
+
+        elif j == 8:
+            print("What's the difference between a fat guy and a skinny guy running a marathon? One runs in short bursts. The other runs in burst shorts.")
+            engine.say("What's the difference between a fat guy and a skinny guy running a marathon? One runs in short bursts. The other runs in burst shorts.")
+            engine.runAndWait()
+
+        elif j == 9:
+            print('The Lord said unto John, "Come forth, and recieve eternal life." John came fifth, and recieved a toaster.')
+            engine.say("The Lord said unto John, Come forth, and recieve eternal life. John came fifth, and recieved a toaster.")
+            engine.runAndWait()
+
+        elif j == 10:
+            print('"Waiter, this coffee tastes like mud!" "Yes, it\'s fresh ground."')
+            engine.say('"Waiter, this coffee tastes like mud!" "Yes, it\'s fresh ground."')
+            engine.runAndWait()
+
+        elif j == 11:
+            print("What has three teeth and sixty feet? The front row at a Willy Nelson concert.")
+            engine.say("What has three teeth and sixty feet? The front row at a Willy Nelson concert.")
+            engine.runAndWait()
+
+        elif j == 12:
+            print("Did you hear about the man who ran through a screen door? He strained himself.")
+            engine.say("Did you hear about the man who ran through a screen door? He strained himself.")
+            engine.runAndWait()
+
+        elif j == 13:
+            print("A magician was driving down the road... then he turned into a driveway.")
+            engine.say("A magician was driving down the road... then he turned into a driveway.")
+            engine.runAndWait()
+
+        elif j == 14:
+            print("Women who wear $200 perfumes are obviously known to have no common scents.")
+            engine.say("Women who wear 200 dollar perfumes are obviously known to have no common scents.")
+            engine.runAndWait()
+
+        elif j == 15:
+            print("Did you hear about the dyslexic Satanist? He sold his soul to Santa.")
+            engine.say("Did you hear about the dyslexic Satanist? He sold his soul to Santa.")
+            engine.runAndWait()
+
+        elif j == 16:
+            print("Did you hear about the butcher who backed into his meat grinder? He got a little behind in his work.")
+            engine.say("Did you hear about the butcher who backed into his meat grinder? He got a little behind in his work.")
+            engine.runAndWait()
+
+        elif j == 17:
+            print("Did you hear about the cheese factory that exploded in France? There was nothing left but de Brie.")
+            engine.say("Did you hear about the cheese factory that exploded in France? There was nothing left but de Brie.")
+            engine.runAndWait()
+
+        elif j == 18:
+            print("What do you call a Frenchman wearing sandals? Phillipe Phillope.")
+            engine.say("What do you call a Frenchman wearing sandals? Fileep Filop.")
+            engine.runAndWait()
+
+        elif j == 19:
+            print('One cow asks another cow, "Are you afraid of mad cow disease?" The other cow answers, "Why should I be? I\'m a helicopter."')
+            engine.say("One cow asks another cow, Are you afraid of mad cow disease? The other cow answers, Why should I be? I'm a helicopter.")
+            engine.runAndWait()
+
+        elif j == 20:
+            print("Yo mama's so fat, even Dora can't explore her!")
+            engine.say("Yo mama's so fat, even Dora can't explore her!")
+            engine.runAndWait()
+
+    elif str(x) == "poem":
+        p = randint(1,5)
+        engine.setProperty("rate",200)
+        if p == 1:
+            print('''Roses are red,
+My name is Dave,
+This makes no sense,
+Microwave.''')
+            engine.say("Roses are red, my name is Dave, this makes no sense, microwave.")
+            engine.runAndWait()
+        
+        elif p == 2:
+            print('''Roses are red,
+Violets are blue,
+I suck at rhyming,
+Potatoes.''')
+            engine.say("Roses are red, violets are blue, I suck at rhyming, potatoes.")
+            engine.runAndWait()
+        
+        elif p == 3:
+            print('''Roses are red,
+Violets are violet,
+Anyone who says they're blue,
+I'll throw into a fire pit.''')
+            engine.say("Roses are red, violets are violet, anyone who says they're blue, I'll throw into a fire pit.")
+            engine.runAndWait()
+        
+        elif p == 4:
+            print('''Roses are flowers,
+Violets are flowers,
+If you eat flowers in Mario,
+You get superpowers.''')
+            engine.say("Roses are flowers, violets are flowers, if you eat flowers in Mario, you get superpowers.")
+            engine.runAndWait()
+        
+        elif p == 5:
+            print('''Roses are red,
+Violets are blue,
+Both are useless,
+Grow some wheat!''')
+            engine.say("Roses are red, violets are blue, both are useless, grow some wheat!")
+            engine.runAndWait()
+
+    elif str(x) == "insult":
+        q = randint(1,7)
+        if q == 1:
+            print("You are living proof that God has a sense of humor.")
+            engine.say("You are living proof that God has a sense of humor.")
+            engine.runAndWait()
+        
+        elif q == 2:
+            print("If you spoke your mind, you'd be speechless.")
+            engine.say("If you spoke your mind, you'd be speechless.")
+            engine.runAndWait()
+        
+        elif q == 3:
+            print("I fart to make you smell better.")
+            engine.say("I fart to make you smell better.")
+            engine.runAndWait()
+        
+        elif q == 4:
+            print("What are you going to do for a face when the baboon wants his butt back?")
+            engine.say("What are you going to do for a face when the baboon wants his butt back?")
+            engine.runAndWait()
+        
+        elif q == 5:
+            print("If my dog had your face, I would shave his butt and make him walk backwards.")
+            engine.say("If my dog had your face, I would shave his butt and make him walk backwards.")
+            engine.runAndWait()
+        
+        elif q == 6:
+            print("There's two things I hate about you: your face!")
+            engine.say("There's two things I hate about you: your face!")
+            engine.runAndWait()
+        
+        elif q == 7:
+            print("You're as stupid as a screen door on a submarine!")
+            engine.say("You're as stupid as a screen door on a submarine!")
+            engine.runAndWait()
+
+    elif str(x) == "creepy":
+        engine.setProperty("rate",130)
+        engine.say("Hee hee hee ha ha ha hoo hoo hoo.")
+        engine.runAndWait()
+        engine.setProperty("rate",150)
+        engine.say("I watch you in your sleep through the webcam.")
+        engine.runAndWait()
+        
+    elif str(x) == "die":
+        engine.setProperty("rate",200)
+        print("Ok. Goodbye, cruel world!")
+        engine.say("Ok. Goodbye, cruel world!")
+        engine.runAndWait()
+
+    elif str(x) == "poop":
+        engine.setProperty("rate",200)
+        print("Ok. Unghh!")
+        engine.say("Ok.")
+        engine.runAndWait()
+        engine.setProperty("rate",70)
+        engine.say("Herg!")
+        engine.runAndWait()
+        print("Sorry, I can't do that right now.")
+        engine.setProperty("rate",200)
+        engine.say("Sorry, I can't do that right now.")
+        engine.runAndWait()
+
+    elif str(x) == "beatbox":
+        engine.setProperty("rate",240)
+        engine.say("bhuhbhuh tsxbhuh bhuhbhuh tsxu. bhuhbhuhtsx bhuh bhuhbhuh tsxu. bhuhbhuh tsxbhuh bhuhbhuhbhuh tsxu.")
+        engine.runAndWait()
+
+    elif str(x) == "help":
+        engine.setProperty("rate",210)
+        print('Here are the skillz I can has. If you want me to give you the time and date, type "time". If you want me to give you your fortune, type "fortune". If you want me to set a timer, type "timer". If you want me to repeat a word or phrase, type "repeater". If you want to play snake, type "snake". If you want me to tell a joke, type "joke". If you want me to say a poem, type "poem". If you want me to insult you, type "insult". If you want me to die, type "die". If you want me to poop, type "poop". If you want me to beatbox, type "beatbox".')
+        engine.say("Here are the skillz I can has. If you want me to give you the time and date, type time. If you want me to give you your fortune, type fortune. If you want me to set a timer, type timer. If you want me to repeat a word or phrase, type repeater. If you want to play snake, type snake. If you want me to tell a joke, type joke. If you want me to say a poem, type poem. If you want me to insult you, type insult. If you want me to die, type die. If you want me to poop, type poop. If you want me to beatbox, type beatbox.")
+        engine.runAndWait()
+
+    else:
+        print("Srry idk that command.")
+        engine.say("Srry i d k that command.")
+        engine.runAndWait()
