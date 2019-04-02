@@ -1039,6 +1039,7 @@ Now he is in serious pain.''')
             main(sys.argv[1:])
 
     elif x == "birthday":
+        engine.setProperty("rate",200)
         print("It's your birthday!")
         engine.say("It's your birthday!")
         engine.runAndWait()
@@ -1050,6 +1051,7 @@ Now he is in serious pain.''')
         engine.runAndWait()
 
     elif x == "easter egg":
+        engine.setProperty("rate",200)
         print("Good job! You found an Easter egg!")
         engine.say("Good job! You found an Easter egg!")
         engine.runAndWait()
@@ -1059,6 +1061,7 @@ Now he is in serious pain.''')
         engine.runAndWait()
 
     elif x == "rps":
+        engine.setPropery("rate",200)
         engine.say("Type rock for rock, paper for paper, or scissors for scissors.")
         engine.runAndWait()
         p = input('Type "rock" for rock, "paper" for paper, or "scissors" for scissors. ')
@@ -1089,6 +1092,7 @@ Now he is in serious pain.''')
             engine.runAndWait()
 
     elif x == "sound game":
+        engine.setProperty("rate",200)
         w = True
         s = randint(1,4)
         while True:
@@ -1193,6 +1197,7 @@ Now he is in serious pain.''')
                     engine.runAndWait()
     
     elif x == "search":
+        engine.setProperty("rate",200)
         engine.say("What do you want to search on google?")
         engine.runAndWait()
         s = input("What do you want to search on Google? ")
@@ -1211,6 +1216,7 @@ Now he is in serious pain.''')
     
     elif x == "iq test":
         #specifically made to upset people
+        engine.setProperty("rate",200)
         iq = 100
         
         print("Question 1:")
@@ -1378,6 +1384,7 @@ Now he is in serious pain.''')
             engine.runAndWait()
 
     elif x == "survey":
+        engine.setProperty("rate",200)
         print('If you are not comfortable with answering a question, type "x".')
         engine.say("If you are not comfortable with answering a question, type x.")
         
