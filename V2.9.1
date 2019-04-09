@@ -1,0 +1,408 @@
+import pyttsx3
+from random import *
+engine = pyttsx3.init()
+
+def properNoun():
+    global properNounThing
+    n = randint(1,50)
+    if n == 1:
+        properNounThing = "Barry "
+    elif n == 2:
+        properNounThing = "Sarah "
+    elif n == 3:
+        properNounThing = "Chris "
+    elif n == 4:
+        properNounThing = "Todd "
+    elif n == 5:
+        properNounThing = "Agatha "
+    elif n == 6:
+        properNounThing = "Phillip Bartholomew III "
+    elif n == 7:
+        properNounThing = "Hudson "
+    elif n == 8:
+        properNounThing = "Timmy "
+    elif n == 9:
+        properNounThing = "Greg "
+    elif n == 10:
+        properNounThing = "James "
+    elif n == 11:
+        properNounThing = "Richard "
+    elif n == 12:
+        properNounThing = "Little Miss Muffet "
+    elif n == 13:
+        properNounThing = "Humpty Dumpty "
+    elif n == 14:
+        properNounThing = "Bailey "
+    elif n == 15:
+        properNounThing = "Jonesy "
+    elif n == 16:
+        properNounThing = "Dylan "
+    elif n == 17:
+        properNounThing = "Harry Potter "
+    elif n == 18:
+        properNounThing = "Noah "
+    elif n == 19:
+        properNounThing = "Eugene "
+    elif n == 20:
+        properNounThing = "Samuel "
+    elif n == 21:
+        properNounThing = "Nicholas "
+    elif n == 22:
+        properNounThing = "Mickey "
+    elif n == 23:
+        properNounThing = "Juan "
+    elif n == 24:
+        properNounThing = "Fred "
+    elif n == 25:
+        properNounThing = "Rodrick "
+    elif n == 26:
+        properNounThing = "Liam "
+    elif n == 27:
+        properNounThing = "Pete "
+    elif n == 28:
+        properNounThing = "Joey "
+    elif n == 29:
+        properNounThing = "David "
+    elif n == 30:
+        properNounThing = "Madison "
+    elif n == 31:
+        properNounThing = "Maggie "
+    elif n == 32:
+        properNounThing = "Tom "
+    elif n == 33:
+        properNounThing = "Whitney "
+    elif n == 34:
+        properNounThing = "Natalie "
+    elif n == 35:
+        properNounThing = "Rose "
+    elif n == 36:
+        properNounThing = "Emma "
+    elif n == 37:
+        properNounThing = "Mia "
+    elif n == 38:
+        properNounThing = "Anna "
+    elif n == 39:
+        properNounThing = "Martha "
+    elif n == 40:
+        properNounThing = "Amy "
+    elif n == 41:
+        properNounThing = "Florence "
+    elif n == 42:
+        properNounThing = "Amelia "
+    elif n == 43:
+        properNounThing = "Mary "
+    elif n == 44:
+        properNounThing = "Elizabeth "
+    elif n == 45:
+        properNounThing = "Jessica "
+    elif n == 46:
+        properNounThing = "Abby "
+    elif n == 47:
+        properNounThing = "Chloe "
+    elif n == 48:
+        properNounThing = "Amber "
+    elif n == 49:
+        properNounThing = "Isabelle "
+    elif n == 50:
+        properNounThing = "Hannah "
+
+def verb():
+    global verbThing
+    n = randint(1,25)
+    if n == 1:
+        verbThing = "walked to a "
+    elif n == 2:
+        verbThing = "ate a "
+    elif n == 3:
+        verbThing = "killed a "
+    elif n == 4:
+        verbThing = "punched a "
+    elif n == 5:
+        verbThing = "ran into a "
+    elif n == 6:
+        verbThing = "shot a "
+    elif n == 7:
+        verbThing = "spit on a "
+    elif n == 8:
+        verbThing = "tripped over a "
+    elif n == 9:
+        verbThing = "threw up a "
+    elif n == 10:
+        verbThing = "farted a "
+    elif n == 11:
+        verbThing = "turned into a "
+    elif n == 12:
+        verbThing = "bought a "
+    elif n == 13:
+        verbThing = "kissed a "
+    elif n == 14:
+        verbThing = "stole a "
+    elif n == 15:
+        verbThing = "vaporized a "
+    elif n == 16:
+        verbThing = "sat on a "
+    elif n == 17:
+        verbThing = "stabbed a "
+    elif n == 18:
+        verbThing = "painted a "
+    elif n == 19:
+        verbThing = "sold a "
+    elif n == 20:
+        verbThing = "found a "
+    elif n == 21:
+        verbThing = "washed a "
+    elif n == 22:
+        verbThing = "vacuumed a "
+    elif n == 23:
+        verbThing = "wrote a story about a "
+    elif n == 24:
+        verbThing = "melted a "
+    elif n == 25:
+        verbThing = "documented the first "
+
+def endingVerb():
+    global endingVerbThing
+    n = randint(1,25)
+    q = str(randint(10,1000))
+    if n == 1:
+        endingVerbThing = "exploded"
+    elif n == 2:
+        endingVerbThing = "tripped and smashed to bits on the concrete"
+    elif n == 3:
+        endingVerbThing = "fell off a cliff"
+    elif n == 4:
+        endingVerbThing = "spontaneously combusted"
+    elif n == 5:
+        endingVerbThing = "was crushed by a falling piano"
+    elif n == 6:
+        endingVerbThing = "had a heart attack"
+    elif n == 7:
+        endingVerbThing = "was struck by lightning"
+    elif n == 8:
+        endingVerbThing = "got married"
+    elif n == 9:
+        endingVerbThing = "fell into a gutter"
+    elif n == 10:
+        endingVerbThing = "got run over"
+    elif n == 11:
+        endingVerbThing = "was arrested for capital murder"
+    elif n == 12:
+        endingVerbThing = "was arrested for shoplifting and smashing store windows"
+    elif n == 13:
+        endingVerbThing = "was arrested for inciting a riot"
+    elif n == 14:
+        endingVerbThing = "fell asleep in the middle of a railroad track"
+    elif n == 15:
+        endingVerbThing = "went to the movies"
+    elif n == 16:
+        endingVerbThing = "had an identity crisis"
+    elif n == 17:
+        endingVerbThing = "fell down and couldn't get up"
+    elif n == 18:
+        endingVerbThing = "went to the library"
+    elif n == 19:
+        endingVerbThing = "bought a new car"
+    elif n == 20:
+        endingVerbThing = "won the lottery"
+    elif n == 21:
+        endingVerbThing = "read a book for the first time"
+    elif n == 22:
+        endingVerbThing = "learned what a refrigerator is"
+    elif n == 23:
+        endingVerbThing = "went to college"
+    elif n == 24:
+        endingVerbThing = "lost " + q + " pounds"
+    elif n == 25:
+        endingVerbThing = "gained " + q + " pounds"
+    
+def adj():
+    global adjThing
+    n = randint(1,25)
+    if n == 1:
+        adjThing = "blue "
+    elif n == 2:
+        adjThing = "mean "
+    elif n == 3:
+        adjThing = "purple "
+    elif n == 4:
+        adjThing = "rotten "
+    elif n == 5:
+        adjThing = "beautiful "
+    elif n == 6:
+        adjThing = "boring "
+    elif n == 7:
+        adjThing = "red "
+    elif n == 8:
+        adjThing = "speedy "
+    elif n == 9:
+        adjThing = "lazy "
+    elif n == 10:
+        adjThing = "wet "
+    elif n == 11:
+        adjThing = "furry "
+    elif n == 12:
+        adjThing = "yellow "
+    elif n == 13:
+        adjThing = "polka-dotted "
+    elif n == 14:
+        adjThing = "idiotic "
+    elif n == 15:
+        adjThing = "striped "
+    elif n == 16:
+        adjThing = "hairy "
+    elif n == 17:
+        adjThing = "stinky "
+    elif n == 18:
+        adjThing = "green "
+    elif n == 19:
+        adjThing = "sleepy "
+    elif n == 20:
+        adjThing = "fragrant "
+    elif n == 21:
+        adjThing = "fat "
+    elif n == 22:
+        adjThing = "sick "
+    elif n == 23:
+        adjThing = "wooden "
+    elif n == 24:
+        adjThing = "pointy "
+    elif n == 25:
+        adjThing = "stone "
+    
+def noun():
+    global nounThing
+    n = randint(1,25)
+    if n == 1:
+        nounThing = "dog"
+    elif n == 2:
+        nounThing = "pickle"
+    elif n == 3:
+        nounThing = "television"
+    elif n == 4:
+        nounThing = "bed"
+    elif n == 5:
+        nounThing = "fire truck"
+    elif n == 6:
+        nounThing = "car"
+    elif n == 7:
+        nounThing = "toothbrush"
+    elif n == 8:
+        nounThing = "book"
+    elif n == 9:
+        nounThing = "toilet"
+    elif n == 10:
+        nounThing = "Rubik's Cube"
+    elif n == 11:
+        nounThing = "piece of aluminum foil"
+    elif n == 12:
+        nounThing = "cardboard box"
+    elif n == 13:
+        nounThing = "vase"
+    elif n == 14:
+        nounThing = "carpet"
+    elif n == 15:
+        nounThing = "mouse"
+    elif n == 16:
+        nounThing = "zebra"
+    elif n == 17:
+        nounThing = "cow"
+    elif n == 18:
+        nounThing = "aardvark"
+    elif n == 19:
+        nounThing = "shark"
+    elif n == 20:
+        nounThing = "large intestine"
+    elif n == 21:
+        nounThing = "small intestine"
+    elif n == 22:
+        nounThing = "calculator"
+    elif n == 23:
+        nounThing = "microwave"
+    elif n == 24:
+        nounThing = "Xbox"
+    elif n == 25:
+        nounThing = "house"
+
+def endSentence():
+    global endSentenceThing
+    n = randint(1,2)
+    if n == 1:
+        endSentenceThing = "."
+    elif n == 2:
+        endSentenceThing = "!"
+
+def sentence1():
+    properNoun()
+    verb()
+    adj()
+    noun()
+    endSentence()
+    global x
+    x = properNounThing + verbThing + adjThing + nounThing + endSentenceThing
+
+def sentence2():
+    properNoun()
+    endingVerb()
+    endSentence()
+    global x
+    x = properNounThing + endingVerbThing + endSentenceThing
+
+def paragraph():
+    y = randint(1,2)
+    if y == 1:
+        sentence1()
+        engine.say(x)
+    else:
+        sentence2()
+        engine.say(x)
+    print(x)
+    y = randint(1,2)
+    if y == 1:
+        sentence1()
+        engine.say(x)
+    else:
+        sentence2()
+        engine.say(x)
+    print(x)
+    y = randint(1,2)
+    if y == 1:
+        sentence1()
+        engine.say(x)
+    else:
+        sentence2()
+        engine.say(x)
+    print(x)
+    engine.runAndWait()
+
+def story():
+    print("Chapter 1:")
+    engine.say("Chapter 1,")
+    engine.runAndWait()
+    paragraph()
+
+    print("Chapter 2:")
+    engine.say("Chapter 2,")
+    engine.runAndWait()
+    paragraph()
+
+    print("Chapter 3:")
+    engine.say("Chapter 3,")
+    engine.runAndWait()
+    paragraph()
+    
+    print("Chapter 4:")
+    engine.say("Chapter 4,")
+    engine.runAndWait()
+    paragraph()
+
+    print("Chapter 5:")
+    engine.say("Chapter 5,")
+    engine.runAndWait()
+    paragraph()
+
+    print("Chapter 6:")
+    engine.say("Chapter 6,")
+    engine.runAndWait()
+    paragraph()
+
+story()
